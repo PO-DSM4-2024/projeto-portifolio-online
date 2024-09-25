@@ -7,6 +7,8 @@ import Permissoes from './models/Permissoes.js';
 import Roles from './models/Roles.js';
 import Turmas from './models/Turmas.js';
 import Usuarios from './models/Usuarios.js';
+import alunosRoutes from './routes/alunosRoutes.js';
+import usuariosRoutes from './routes/usuariosRoutes.js';
 
 dotenv.config();
 
@@ -14,6 +16,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
+
+app.use('/', alunosRoutes);
+app.use('/', usuariosRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello, World!');
@@ -30,8 +35,8 @@ const run = async () => {
     app.listen(port, () => {
       console.log(`Servidor rodando na porta ${port}`);
     });
-  } catch (err) {
-    console.error('Não foi possivel conectar com o banco de dados:', err);
+  } catch (error) {
+    console.error('Não foi possivel conectar com o banco de dados:', error);
   }
 };
 
