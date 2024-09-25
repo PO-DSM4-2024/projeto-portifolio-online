@@ -1,26 +1,38 @@
-import express from "express";
-import sequelize from "./config/database.js";
-import dotenv from "dotenv";
-
+import express from 'express';
+import sequelize from './config/database.js';
+import dotenv from 'dotenv';
+import Alunos from './models/Alunos.js';
+import Cursos from './models/Cursos.js';
+import Permissoes from './models/Permissoes.js';
+import Roles from './models/Roles.js';
+import Turmas from './models/Turmas.js';
+import Usuarios from './models/Usuarios.js';
 
 dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
 });
 
-sequelize
-  .sync()
-  .then(() => {
+const run = async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('Conexão com o banco de dados estabelecida.');
+
+    await sequelize.sync();
+    console.log('Sincronização realizada com sucesso');
+
     app.listen(port, () => {
-      console.log(`Server is running on port ${port}`);
+      console.log(`Servidor rodando na porta ${port}`);
     });
-  })
-  .catch((err) => {
-    console.error("Unable to connect to the database:", err);
-  });
+  } catch (err) {
+    console.error('Não foi possivel conectar com o banco de dados:', err);
+  }
+};
+
+run();
