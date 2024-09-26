@@ -1,6 +1,6 @@
-import Usuarios from '../models/Usuarios.js';
+import Usuarios from '../models/usuarios.js';
 import bcrypt from 'bcrypt';
-import { login } from '../services/AuthService.js';
+import { login } from '../services/authService.js';
 
 const getUsuarios = async (req, res) => {
   try {

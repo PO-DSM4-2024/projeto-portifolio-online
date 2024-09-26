@@ -1,14 +1,14 @@
 import express from 'express';
 import sequelize from './config/database.js';
 import dotenv from 'dotenv';
-import Alunos from './models/Alunos.js';
-import Cursos from './models/Cursos.js';
-import Permissoes from './models/Permissoes.js';
-import Roles from './models/Roles.js';
-import Turmas from './models/Turmas.js';
-import Usuarios from './models/Usuarios.js';
-import alunosRoutes from './routes/alunosRoutes.js';
-import usuariosRoutes from './routes/usuariosRoutes.js';
+import Alunos from './models/alunos.js';
+import Cursos from './models/cursos.js';
+import Permissoes from './models/permissoes.js';
+import Roles from './models/roles.js';
+import Turmas from './models/turmas.js';
+import Usuarios from './models/usuarios.js';
+import alunosRoutes from './routes/alunoRoutes.js';
+import usuariosRoutes from './routes/usuarioRoutes.js';
 
 dotenv.config();
 
