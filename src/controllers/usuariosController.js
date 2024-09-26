@@ -1,5 +1,6 @@
 import Usuarios from '../models/Usuarios.js';
 import bcrypt from 'bcrypt';
+import { login } from '../services/AuthService.js';
 
 const getUsuarios = async (req, res) => {
   try {
@@ -91,4 +92,15 @@ const deleteUsuario = async (req, res) => {
   }
 };
 
-export { getUsuarios, createUsuario, getUsuarioById, updateUsuario, deleteUsuario };
+const loginUsuario = async (req, res) => {
+  const { email, senha } = req.body;
+
+  try {
+    const { usuario, token } = await login(email, senha);
+    res.status(200).json({ usuario, token });
+  } catch (error) {
+    res.status(401).json({ error: error.message });
+  }
+};
+
+export { getUsuarios, createUsuario, getUsuarioById, updateUsuario, deleteUsuario, loginUsuario };

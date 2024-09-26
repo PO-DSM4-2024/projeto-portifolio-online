@@ -1,14 +1,15 @@
 services:
   db:
     image: postgres:latest
+    container_name: postgres-db
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_DB: database
-      POSTGRES_USER: username
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${PG_DB}
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql/data
 
 volumes:
-  db_data:
+  db-data:
