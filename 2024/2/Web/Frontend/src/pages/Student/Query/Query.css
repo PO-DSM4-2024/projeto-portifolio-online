@@ -1,0 +1,94 @@
+@font-face {
+  font-family: nunito;
+  src: url('../../../assets/fonts/Nunito-Regular.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.query_container {
+  top: 0;
+  width: 100vw;
+  background-color: #f2f2f2;
+  display: flex;
+  font-family: nunito;
+}
+
+.query_side_content {
+  top: 0;
+  width: 81%;
+  height: 100%;
+  background-color: #f2f2f2;
+  margin-left: 19.1%;
+}
+
+.query_info {
+  margin-top: 26px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+  column-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.query_title {
+  width: 93%;
+  height: 79px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.query_title_text {
+  margin-left: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.query_card {
+  padding: 36px;
+  width: 45%;
+  height: 38%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.card_titles {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.card_title p {
+  font-weight: 500;
+}
+
+.card_content {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_content p {
+  font-weight: 300;
+}
