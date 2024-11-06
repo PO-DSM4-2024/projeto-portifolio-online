@@ -1,4 +1,3 @@
-import { ValidationErrorItem } from 'sequelize';
 import RollCall from '../models/RollCall.js';
 
 const getRollCall = async (req, res) => {
@@ -26,7 +25,8 @@ const updateRollCall = async (req, res) => {
       return res.status(404).json({ error: 'Chamada não encontrada.' });
     }
     await rollCall.update(req.body);
-    res.status(200).json(RollCall);
+    const updatedRollCall = await RollCall.findByPk(req.params.id)
+    res.status(200).json(updatedRollCall);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

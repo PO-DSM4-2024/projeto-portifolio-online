@@ -39,7 +39,7 @@ const updateStudent = async (req, res) => {
       return res.status(404).json({ message: 'Aluno não encontrado.' });
     }
     const updatedStudent = await Students.findByPk(id);
-    res.json(updatedStudent);
+    res.status(200).json(updatedStudent);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
