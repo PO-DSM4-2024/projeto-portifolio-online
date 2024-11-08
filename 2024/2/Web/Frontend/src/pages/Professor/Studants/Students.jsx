@@ -1,8 +1,12 @@
-import useAuthStore from '../../../store/useAuthStore.js';
 import styles from './Students.module.css';
 
 const Students = () => {
-  const { students } = useAuthStore();
+  // Exemplo de dados estáticos, já que não estamos utilizando o zustand
+  const students = [
+    { id: 1, name: 'João Silva', status: 'Ativo', frequency: '75%' },
+    { id: 2, name: 'Maria Oliveira', status: 'Inativo', frequency: '50%' },
+    { id: 3, name: 'Carlos Souza', status: 'Ativo', frequency: '80%' },
+  ];
 
   return (
     <div className={styles.studentsContainer}>
@@ -79,4 +83,4 @@ const Students = () => {
   );
 };
 
-export default Students;
+export default Students;
