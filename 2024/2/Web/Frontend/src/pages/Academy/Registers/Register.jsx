@@ -1,4 +1,4 @@
-import Menu from '../../../components/Secretaria/Menu/Menu';
+import Menu from '../../../components/Academy/Menu/Menu';
 import Panel from '../../../components/Panel/Panel';
 import icons from '../../../assets/images/icons/icons';
 import styles from './Register.module.css';
@@ -16,13 +16,14 @@ const Registrations = () => {
                 <p>Gestão de Alunos</p>
               </div>
               <div className={styles.line}></div>
+             
+              <div className={styles.group}>
               <div className={styles.searchBar}>
                 <button className={styles.search}>
                   <img src={icons.search.src} alt={icons.search.alt} className={styles.ima} />
                 </button>
                 <input type="search" placeholder="Pesquisar aluno" />
               </div>
-              <div className={styles.inputGroup}>
                 <select className={styles.selectTurma}>
                   <option value="Turmas">TURMAS</option>
                   <option value="1DSM">1 DSM</option>
@@ -32,17 +33,15 @@ const Registrations = () => {
                   <option value="5DSM">5 DSM</option>
                   <option value="6DSM">6 DSM</option>
                 </select>
-              </div>
-              <div className={styles.inputGroup}>
                 <select className={styles.selectCurso}>
                   <option value="Curso">CURSO</option>
                   <option value="DSM">Desenvolvimento de Software Multiplataforma</option>
                   <option value="GE">Gestão Empresarial</option>
                 </select>
-              </div>
-              <button type="submit" className={styles.matricularButton}>
+                <button type="submit" className={styles.matricularButton}>
                 + Matricular
               </button>
+              </div>
 
               <table className={styles.matriculaTable}>
                 <thead>
@@ -136,11 +135,13 @@ const Registrations = () => {
                   </tr>
                 </tbody>
               </table>
-              <p className={styles.foot}>Total de 10 Registros</p>
+              <div className={styles.foot}>
+              <p className={styles.pfoot}>Total de 10 Registros</p>
               <div className={styles.pages}>
                 <p className={styles.page1}>1</p>
                 <p className={styles.page2}>2</p>
                 <img src={icons.arrow.src} alt={icons.arrow.alt} />
+              </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,112 @@
+@font-face {
+  font-family: nunito;
+  src: url('../../../assets/fonts/Nunito-Regular.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+button {
+  width: 127px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.infoGeneralContainer {
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+.infoGeneralSideContents {
+  top: 0;
+  width: 81%;
+  height: 100%;
+  background-color: #f2f2f2;
+  margin-left: 19.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrationInfoContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 19px 30px;
+}
+
+.registrationMainInformation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 44px;
+  padding: 39px 37px;
+  border-radius: 5px;
+  background-color: #fbfcff;
+}
+
+.tabsGeneralInformation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 100%;
+  gap: 7%;
+}
+
+#tabsPersonalLink {
+  color: inherit;
+}
+
+.tabsGeneralInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.indicationGeneralInfo {
+  color: #f66b0e;
+}
+
+.indicationGeneralLine {
+  background-color: #f66b0e;
+  width: 100%;
+  height: 4px;
+}
+
+.tabsGeneralLine {
+  width: 100%;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.buttonsGeneralContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 23px;
+}
+
+.buttonGeneralSave {
+  background-color: #f66b0e;
+  color: #ffffff;
+}
+
+.buttonGeneralCancel {
+  background-color: #F66B0E33;
+  color: #F66B0E;
+}

@@ -1,0 +1,69 @@
+input,
+select {
+  background-color: transparent;
+  color: #aaaaaa;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.registrationInfoPersonal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+
+.registrationPersonalFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  padding: 17px 0;
+}
+
+.registrationPersonalForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.registrationFormPersonal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 42px;
+}
+
+.registrationPersonalFormRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.registrationPersonalLbl {
+  color: #3c5874;
+}
+
+.registrationInpNamePersonal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 18px;
+  width: 103%;
+  height: 46px;
+}
+
+.registrationInpPersonalInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 18px;
+  width: 100%;
+  height: 46px;
+}

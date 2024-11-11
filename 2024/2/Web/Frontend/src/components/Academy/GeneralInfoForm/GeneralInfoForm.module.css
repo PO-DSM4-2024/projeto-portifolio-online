@@ -1,0 +1,80 @@
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: #aaaaaa;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.registrationInfoGeneral {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+
+.registrationGeneralFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  padding: 17px 0;
+}
+
+.registrationGeneralForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.registrationFormGeneral {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 80px;
+}
+
+.registrationFormGeneralColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 34px;
+}
+
+.registrationGeneralFormRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.registrationGeneralLbl {
+  color: #3c5874;
+}
+
+.registrationInpGeneralInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.registrationInpGeneralInfoArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+  padding: 11px 18px;
+  width: 100%;
+  height: 50%;
+}

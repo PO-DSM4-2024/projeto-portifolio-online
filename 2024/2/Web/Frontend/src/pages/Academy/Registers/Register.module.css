@@ -110,54 +110,51 @@ body {
   margin-top: 5px;
 }
 
-.inputGroup {
-  margin-bottom: 20px;
-  width: 50%;
+.group {
+  display: flex;
+  margin-top: 2rem;
 }
 
 .selectTurma {
-  width: 11%;
-  height: 7%;
+  width: 300px;
+  height: 52px;
   font-family: nunito;
   font-size: 1.2rem;
   border: 2px solid #eceaea;
   border-radius: 10px;
   background-color: #f2f2f2;
   color: #636d76;
-  margin-left: 26rem;
   outline: none;
-  margin-top: -54px;
-  position: absolute;
+  margin-left: 2rem;
+  margin-top: .4rem;
 }
 
 .selectCurso {
-  width: 18%;
-  height: 7%;
+  width: 300px;
+  height: 52px;
   font-family: nunito;
   font-size: 1.15rem;
   border: 2px solid #eceaea;
   border-radius: 10px;
   background-color: #f2f2f2;
   color: #636d76;
-  margin-left: 38rem;
   outline: none;
-  margin-top: -73px;
-  position: absolute;
+  margin-top: .4rem;
+  margin-left: 2rem;
 }
 
 .matricularButton {
-  width: 179px;
-  height: 49px;
+  width: 200px;
+  height: 52px;
   background-color: #3c5874;
   color: #eceaea;
   font-size: 20px;
   border-radius: 30px;
   padding-top: 13px;
   padding-left: 22px;
-  left: 80rem;
   border: none;
-  margin-top: -4.5rem;
-  position: absolute;
+  margin-top: .5rem;
+  margin-left: 4rem;
 }
 
 .search {
@@ -247,7 +244,7 @@ body {
 .options {
   padding-left: 14px;
   position: relative;
-  left: 33px;
+  left: 43px;
   cursor: pointer;
 }
 
@@ -276,7 +273,11 @@ span {
   font-weight: bold;
 }
 
-.foot {
+.foot{
+  display: flex;
+}
+
+.pfoot {
   font-size: 1.2rem;
   margin-left: 30px;
   margin-top: 38px;
@@ -286,7 +287,7 @@ span {
   display: flex;
   align-items: center;
   margin-left: 59.2rem;
-  margin-top: -30px;
+  margin-top: 2rem;
 }
 
 .page1,
